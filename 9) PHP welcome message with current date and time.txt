@@ -11,3 +11,52 @@ echo "<br>";
 echo "Current Time: " . date("h:i:s A");
 
 ?>
+
+==================================== or =================================== welcome.php
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome Page</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        h1{
+            color: blue;
+        }
+
+        h2{
+            color: green;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<?php
+
+date_default_timezone_set("Asia/Kolkata");
+
+echo "<h1>Welcome Student</h1>";
+
+echo "<h2>";
+
+echo "Current Date: " . date("d-m-Y");
+
+echo "<br><br>";
+
+echo "Current Time: " . date("h:i:s A");
+
+echo "</h2>";
+
+?>
+
+</body>
+</html>

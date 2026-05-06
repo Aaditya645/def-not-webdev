@@ -61,3 +61,40 @@
 
 </body>
 </html>
+
+==========================================================================================================
+============ script.js =======================
+
+function calculate(){
+
+    let a = parseInt(document.getElementById("num1").value);
+    let b = parseInt(document.getElementById("num2").value);
+    let op = document.getElementById("op").value;
+
+    let ans;
+
+    switch(op){
+
+        case "+":
+            ans = a + b;
+            break;
+
+        case "-":
+            ans = a - b;
+            break;
+
+        case "*":
+            ans = a * b;
+            break;
+
+        case "/":
+            ans = a / b;
+            break;
+
+        default:
+            ans = "Invalid Operator";
+    }
+
+    document.getElementById("result").innerHTML =
+    "Result = " + ans;
+}

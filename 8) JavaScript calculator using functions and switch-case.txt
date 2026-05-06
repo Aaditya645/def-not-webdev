@@ -3,59 +3,61 @@
 <head>
     <title>Calculator</title>
 
-<script>
+    <script src="script.js"></script>
 
-function calculate()
-{
-    var a = parseInt(document.getElementById("num1").value);
-    var b = parseInt(document.getElementById("num2").value);
-    var op = document.getElementById("op").value;
+    <style>
 
-    var result;
+        body{
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+        }
 
-    switch(op)
-    {
-        case '+':
-            result = a + b;
-            break;
+        input{
+            width: 250px;
+            padding: 10px;
+            font-size: 18px;
+        }
 
-        case '-':
-            result = a - b;
-            break;
+        button{
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
 
-        case '*':
-            result = a * b;
-            break;
+        h2{
+            font-size: 35px;
+        }
 
-        case '/':
-            result = a / b;
-            break;
+        h3{
+            color: blue;
+            font-size: 28px;
+        }
 
-        default:
-            result = "Invalid";
-    }
-
-    document.getElementById("ans").innerHTML =
-    "Result = " + result;
-}
-
-</script>
+    </style>
 </head>
 
 <body>
 
-Number 1:
-<input type="text" id="num1"><br><br>
+    <h2>Simple Calculator</h2>
 
-Number 2:
-<input type="text" id="num2"><br><br>
+    Number 1:<br>
+    <input type="number" id="num1"><br><br>
 
-Operator:
-<input type="text" id="op"><br><br>
+    Number 2:<br>
+    <input type="number" id="num2"><br><br>
 
-<button onclick="calculate()">Calculate</button>
+    Operator (+,-,*,/):<br>
+    <input type="text" id="op"><br><br>
 
-<h2 id="ans"></h2>
+    <button onclick="calculate()">
+        Calculate
+    </button>
+
+    <h3 id="result"></h3>
 
 </body>
 </html>

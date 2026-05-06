@@ -10,3 +10,47 @@ foreach($students as $s)
 }
 
 ?>
+
+====================================or ====================== array.php====
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PHP Array</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h1{
+            color: darkblue;
+        }
+
+        h2{
+            color: green;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<?php
+
+$students = array("Amit","Riya","Rahul","Sneha");
+
+echo "<h1>Student Names</h1>";
+
+foreach($students as $name){
+
+    echo "<h2>$name</h2>";
+}
+
+?>
+
+</body>
+</html>

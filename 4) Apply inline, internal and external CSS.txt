@@ -3,44 +3,57 @@
 <head>
     <title>CSS Example</title>
 
+    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Internal CSS -->
     <style>
-        h1{
+        h2{
             color: blue;
             text-align: center;
         }
-
-        table{
-            border-collapse: collapse;
-        }
     </style>
 </head>
+
 <body>
 
-<h1>CSS Types</h1>
+    <!-- Inline CSS -->
+    <h1 style="color:red;">Welcome</h1>
 
-<p style="color:red;">This is inline CSS.</p>
+    <h2>Student Table</h2>
 
-<table border="1">
-    <tr>
-        <th>Name</th>
-        <th>Marks</th>
-    </tr>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Marks</th>
+        </tr>
 
-    <tr>
-        <td>Aaditya</td>
-        <td>90</td>
-    </tr>
-</table>
+        <tr>
+            <td>Amit</td>
+            <td>85</td>
+        </tr>
+
+        <tr>
+            <td>Riya</td>
+            <td>90</td>
+        </tr>
+    </table>
 
 </body>
 </html>
 
 ======================================================================================
-== style.css==
-
 body{
-    background-color: lightgray;
+    background-color: lightyellow;
     font-family: Arial;
+}
+
+table{
+    width: 50%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: lightblue;
 }

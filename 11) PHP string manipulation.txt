@@ -17,3 +17,54 @@ echo "<br>";
 echo "Substring: " . substr($str, 0, 3);
 
 ?>
+
+
+
+========================================= or ==================================================================
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Manipulation</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h1{
+            color: blue;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<?php
+
+$str = "Welcome Student";
+
+echo "<h1>PHP String Functions</h1>";
+
+echo "Original String: " . $str;
+
+echo "<br><br>";
+
+echo "String Length: " . strlen($str);
+
+echo "<br><br>";
+
+echo "Reverse String: " . strrev($str);
+
+echo "<br><br>";
+
+echo "Substring: " . substr($str,0,7);
+
+?>
+
+</body>
+</html>

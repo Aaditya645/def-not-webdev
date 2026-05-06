@@ -1,26 +1,68 @@
-<!DOCTYPE html>
-<html>
-<body>
-
-<form method="post" action="display.php">
-
-    Name:
-    <input type="text" name="name">
-
-    <input type="submit">
-
-</form>
-
-</body>
-</html>
-
-====================================================
-====== display.php =======
+===================== form.php=============
 
 <?php
 
-$name = $_POST['name'];
+if(isset($_POST["name"])){
 
-echo "Welcome " . $name;
+    $name = $_POST["name"];
+
+    echo "<h2>Welcome " . $name . "</h2>";
+}
 
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>POST Method</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        input{
+            width: 250px;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        button{
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        h1{
+            font-size: 35px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Student Form</h1>
+
+    <form method="POST">
+
+        Enter Name:<br><br>
+
+        <input type="text" name="name"><br><br>
+
+        <button type="submit">
+            Submit
+        </button>
+
+    </form>
+
+</body>
+</html>

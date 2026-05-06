@@ -1,39 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Validation</title>
-
-<script>
-function validateForm()
-{
-    var email = document.getElementById("email").value;
-    var name = document.getElementById("name").value;
-
-    if(name == "")
-    {
-        alert("Name cannot be empty");
-        return false;
-    }
-
-    if(email == "")
-    {
-        alert("Email cannot be empty");
-        return false;
-    }
-
-    if(email.indexOf("@") == -1)
-    {
-        alert("Invalid Email");
-        return false;
-    }
-
-    return true;
-}
-</script>
-
+    <title>Form Validation</title>
+    <script src="script.js"></script>
 </head>
 
 <body>
+
+<h2>Form Validation</h2>
 
 <form onsubmit="return validateForm()">
 
@@ -49,3 +23,29 @@ function validateForm()
 
 </body>
 </html>
+
+
+====================================================================
+
+============ script.js ============================
+
+function validateForm(){
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+
+    if(name == "" || email == ""){
+        alert("Fields cannot be empty");
+        return false;
+    }
+
+    let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+    if(!email.match(pattern)){
+        alert("Invalid Email");
+        return false;
+    }
+
+    alert("Form Submitted");
+    return true;
+}

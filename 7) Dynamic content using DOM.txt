@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Example</title>
+
+<script>
+function changeText()
+{
+    document.getElementById("demo").innerHTML =
+    "Content changed using DOM";
+}
+</script>
+
+</head>
+
+<body>
+
+<h2 id="demo">Original Content</h2>
+
+<button onclick="changeText()">
+    Click Me
+</button>
+
+</body>
+</html>

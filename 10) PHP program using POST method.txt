@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form method="post" action="display.php">
+
+    Name:
+    <input type="text" name="name">
+
+    <input type="submit">
+
+</form>
+
+</body>
+</html>
+
+====================================================
+====== display.php =======
+
+<?php
+
+$name = $_POST['name'];
+
+echo "Welcome " . $name;
+
+?>

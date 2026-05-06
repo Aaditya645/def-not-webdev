@@ -1,0 +1,12 @@
+<?php
+
+$students = array("Aaditya", "Rahul", "Sneha");
+
+echo "Student Names:<br><br>";
+
+foreach($students as $s)
+{
+    echo $s . "<br>";
+}
+
+?>
